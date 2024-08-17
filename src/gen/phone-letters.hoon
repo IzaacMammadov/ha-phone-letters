@@ -23,15 +23,12 @@
 %=  $
 n  (div n 10)
 output
-|-
 ?~  output
   (~(got by char-map) (mod n 10))
 %-  zing
-%+  turn
-output
+%+  turn  output
 |=  existing=tape
-%+  turn
-(~(got by char-map) (mod n 10))
+%+  turn  (~(got by char-map) (mod n 10))
 |=  letter=tape
 %+  weld  letter  existing
 ==
